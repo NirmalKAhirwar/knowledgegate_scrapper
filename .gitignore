@@ -1,8 +1,9 @@
-# runtime data (never commit)
-data/
-*.db
-*.db-wal
-*.db-shm
+# runtime data
+data/*
+!data/kg.db
+data/cookies.json
+data/*.db-wal
+data/*.db-shm
 
 # secrets
 cookies.json
@@ -11,9 +12,9 @@ cookies.json
 !.env.example
 
 # exports
-out/
+out/*
+!out/course.pdf
 exports/
-*.pdf
 
 # python
 .venv/
